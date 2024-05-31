@@ -57,6 +57,23 @@ int main() {
     for (int i=0;i<n;i++){
         cout<<urut[i];
     }
+    cout<<endl;
+    //cari data
+    int cari;
+    cout <<"Masukkan Nilai yg dicari : ";
+    cin>>cari;
+    
+    int hasil=binarySearch(datax, n, cari);
+    
+    
+    if(hasil != -1)
+    {
+        cout<<"Nilai "<<cari<<" Berada di indeks "<< hasil<<endl;
+    }
+    else{
+        cout <<"Nilai :"<<cari<<"Tidak ditemukan"<<endl;
+    }
+
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
